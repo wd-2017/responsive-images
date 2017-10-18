@@ -78,3 +78,36 @@ audio {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+
+/*
+  5-column grid: 600px;
+  100px-wide columns
+  25px-wide gutters
+  2-column module = 225px;
+  3-column module = 350px;
+  4-column module = 475px;
+  4-column offset = 500px;
+*/
+@media screen and (min-width: 650px) {
+  .photo img {
+    width: 58.3333333%; /* 350 / 600px = 0.583333333 */
+    float: left;
+  }
+  .photo figcaption {
+    width: 37.5%; /* 225 / 600 = 0.375 */
+    float: left;
+    margin-left: 4.1666667%; /* 25 / 600 = 0.041666667 */
+  }
+  footer {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .photo img {
+    width: 79.1666667%; /* 475 / 600px = 0.791666667 */
+  }
+  .photo figcaption {
+    width: 16.6666667%; /* 100 / 600 = 0.166666667 */
+  }
+}
